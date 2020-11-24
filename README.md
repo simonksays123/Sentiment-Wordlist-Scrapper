@@ -38,3 +38,33 @@ Recommended things to edit:
 
 ## All the Files
 
+Here's a quick explanation of each file in this repository.
+
+**Code Files**
+* Gemfile and Gemfile.lock
+  * Used by the bundler gem to simplify installation of gem dependencies
+* interactions.rb
+  * Module containing functions which add readability to core file via abstraction
+* scraper.rb
+  * Core ruby file. Handles queue of words to be processed directly
+
+**Input Files**
+* negative_seed.txt
+  * Contains seed words for list of negative words
+* positive_seed.txt
+  * Contains seed words for list of positive words
+
+**Output Files**
+* neg_raw_list.txt and pos_raw_list.txt
+  * Contains negative and positive word lists with extra information
+  * Format: {Word}-{Level, number of synonym jumps made to arrive at the given word}-{p for positive or n for negative}-{Parent word, blank for seed words}
+* negative_word_list.txt and positive_word_list.txt
+  * Negative and positive word lists
+  * Note that "Level" information is included. These lines should be removed before using the word lists
+
+**Documentation**
+* README.md
+  * It's this file which hopefully explains this program
+* LICENSE
+  * MIT License
+  * Explains the legality of use of this code
