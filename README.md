@@ -22,7 +22,19 @@ bundle install
 
 ## How to Run
 
+To run the program as is, merely type:
+```
+ruby scraper.rb
+```
 
+Since the output for the current setup is provided, it is advisable that you change some setting or seed list before doing so to avoid unneeded work.
+
+Recommended things to edit:
+* LAYERS in scraper.rb
+  * Be careful with runtime when increasing this value
+* Seed word lists
+  * negative_seed.txt for negative seed words
+  * positive_seed.txt for positive seed words
 
 ## All the Files
 
